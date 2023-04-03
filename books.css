@@ -1,0 +1,52 @@
+.w3-half{
+    width: 175px;
+    height: 200px;
+    background: #000;
+}
+.w3-card{
+    width: 150px;
+    height: 250px;
+    background: green;
+} 
+.w3-container{
+    width: 150px;
+    height: 130px;
+    color: black;
+    font-size: small;
+    background-color: rgb(153, 42, 42);
+}
+.books {
+    border: 10px ridge #4CAF50;
+    background-color:rgb(3, 3, 3);
+    padding: 0px;
+    display: flex;
+  	width: 140px;
+  	height:300px;
+    flex-direction: column;
+    display: inline-flex;
+}
+.books img {
+    width: 140px;
+  	height:150px;
+}
+.books p {
+    font: small-caps bold 17px sans-serif;
+    color: rgb(2, 2, 2);
+    background-color: white;
+    height:30px;
+    text-align: center;
+}
+.author{
+    font: small-caps bold 17px sans-serif;
+    color: White;
+    border: black;
+    text-align: center;
+    background-color: #4CAF50;
+}
+.name{
+    font: small-caps bold 19px sans-serif;
+    color: rgb(5, 5, 5);
+    text-align: center;
+    height: 40px;
+    background-color: white;
+}

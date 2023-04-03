@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Browser Books</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+.dropbtn-home{
+  background-color:#242121;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #3e8e41;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: black;}
+</style>
+<body style="height:1500px">
+
+    <div id="heading">
+        <!-- <a href="index.html"><img id="logo" src="logo.jpg"></a><br> -->
+        <div class="title"><br>
+            <center><h1><strong >Browser Books</strong></h1><br></center>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" >
+        <div class="container-fluid" >
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse-navbar-collapse" id="collapsibleNavbar">
+              <div class="navigate">
+                <li id="header-row-a"><div class="dropdown" style="display: inline-block;color: black;">
+                  <a href="Index.html" class="dropbtn-home">Home</a>
+                  <div class="dropdown-content">
+                    <a href="account.html">Account</a>
+                    <a href="register.html">Registration</a>
+                    <a href="Login.html">Login</a>
+                    <a href="uploadBook.html">Your Uploads</a>
+                    <a href="requestBook.html">Requested Book</a>
+                  </div>
+                </div></li>
+                <li id="header-row-a"><a href="books.html" class="dropbtn-home">Books</a></li>
+                <li id="header-row-a"><a href="requestBook.html" class="dropbtn-home">Request a Book</a></li>
+                <li id="header-row-a"><a href="uploadBook.html" class="dropbtn-home">Upload a Book</a></li>
+                <li id="header-row-a"><a href="contectUs.html" class="dropbtn-home">Contact Us</a></li>
+                <li id="header-row-a"><a href="aboutUs.html" class="dropbtn-home">About Us</a></li>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="ads/ads1.png" alt="Los Angeles" style="width:100%;">
+          </div>
+    
+          <div class="item">
+            <img src="ads/ads2.jpg " alt="Chicago" style="width:100%;">
+          </div>
+        
+          <div class="item">
+            <img src="ads/ads3.png" alt="New york" style="width:100%;">
+          </div>
+        </div>
+    
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div><br>
+    <div id="index4">
+      <div class="t1"><center><b>New Arrival</b></center></div>
+      <!-- <marquee  behavior="scroll" direction="left" > -->
+          <div class="books">
+              <img src="books/best1.jpg"><br>
+              <div class="name">Atomic <br>Habit </div>
+                 <div class="author">James Clear</div>
+              <p>500 ₹</p>
+          </a>
+          </div>         
+          <div class="books">
+              <img src="books/book2.jpg"
+                   alt="Wings of Fire"><br>
+              <div class="name">Wings of Fire</div>
+                 <div class="author">Dr. APJ A. Kalam</div>
+              <p>500 ₹</p>
+          </div>         
+          <div class="books">
+              <img src="books/book3.jpg"
+                   alt="The 7 habits of highly effective people"><br>
+              <div class="name">The 7 habits of<br>Highly effective..</div>
+                 <div class="author">Stephen Covey</div>
+              <p>500 ₹</p> 
+          </div>         
+          <div class="books">
+              <img src="books/book4.jpg"
+                   alt="You can win"><br>
+              <div class="name">You can win</div>
+                 <div class="author">Shiv Khera</div>
+              <p>500 ₹</p> 
+          </div> 
+          <div class="books">
+              <img src="books/book5.jpg"
+                   alt="Start with why"><br>
+              <div class="name">Start with why</div>
+                 <div class="author">Simon sinek</div>
+              <p>500 ₹</p> 
+          </div>  
+          <div class="books">
+              <img src="books/book6.jpg"
+                   alt="Think and Grow rich"><br>
+              <div class="name">Think and Grow<br> Rich</div>
+                 <div class="author">Nepolian Hill</div>
+              <p>500 ₹</p> 
+          </div>  
+          <div class="books">
+              <img src="books/book7.jpg"
+                   alt="Rich dad,Poor dad"><br>
+              <div class="name">Rich dad,<br>Poor dad</div>
+                 <div class="author">Robert R. Kiyosaki</div>
+              <p>500 ₹</p> 
+          </div>            
+          <div class="books">
+              <img src="books/book8.jpg"
+                   alt="Life's Amazing Secrets"><br>
+              <div class="name">Life's Amazing <br>Secrets</div>
+                 <div class="author">Gaur Gopal Das</div>
+              <p>500 ₹</p> 
+          </div> 
+          <div class="books">
+              <img src="books/book9.jpg"
+                   alt="Think like a Monk"><br>
+              <div class="name">Think like a<br> Monk</div>
+                 <div class="author">Jay shetty</div>
+              <p>500 ₹</p> 
+          </div>  
+      <!-- </marquee>  -->
+  </div><br>
+  <div id="merge">
+    <div id="ad">
+        <video width="100%" height="100%" autoplay muted>
+            <source src="advertisement.mp4" type="video/mp4">
+            <source src="advertisement.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div id="bestSeller" behavior="scroll" direction="left" >
+        <div class="t1"><center><b>Best Selling Books</b></center></div>
+        <!-- <marquee  behavior="scroll" direction="left" > -->
+            <div class="books">
+                <img src="books/best0.jpg"
+                     alt="Shrimad Bhagavad Gita"><br>
+                <div class="name">Shrimad Bhagvad <br>Gita </div>
+                   <div class="author">Ved Vyasa</div>
+                <p>500 ₹</p>
+            </div>            
+            <div class="books">
+                <img src="books/best4.jpg"
+                     alt="JEE MAIN in 40 Days Math's"><br>
+                <div class="name">JEE MAIN in 40 <br>Days Math's</div>
+                   <div class="author">Arihant Publiction</div>
+                <p>650 ₹</p> 
+            </div>  
+            <div class="books">
+                <img src="books/best5.jpg"
+                     alt="All about UPSC"><br>
+                <div class="name">All about UPSC</div>
+                   <div class="author">Nishant Jain</div>
+                <p>650 ₹</p> 
+            </div>  
+            <div class="books">
+                <img src="books/best6.jpg"
+                     alt="IELTS"><br>
+                <div class="name">IELTS </div>
+                   <div class="author">Cambridge University</div>
+                <p>700 ₹</p> 
+            </div>             
+            <div class="books">
+                <img src="books/best10.jpg"
+                     alt="Ramayana"><br>
+                <div class="name">Ramayan</p></div>
+                   <div class="author">Shri Valmiki <br></div>
+                <p>550 ₹</p> 
+            </div>  
+        <!-- </marquee>  -->
+    </div>
+</div><br><br>
+<div class="treding">
+  <div class="t1"><center><b>Now Trending</b></center></div>
+  <!-- <marquee  behavior="scroll" direction="left" > -->          
+      <div class="books">
+          <img src="books/trend3.jpg"
+               alt="IELTS 11"><br>
+          <div class="name">IELTS 11</div>
+             <div class="author">Cambridge University</div>
+          <p>800 ₹</p> 
+      </div>         
+      <div class="books">
+          <img src="books/trend4.jpg"
+               alt="Indian History"><br>
+          <div class="name">Indian History</div>
+             <div class="author">IAS Publication</div>
+          <p>600 ₹</p> 
+      </div> 
+      <div class="books">
+          <img src="books/trend6.jpg"
+               alt="Heart Disease"><br>
+          <div class="name">Heart Disease</div>
+             <div class="author">Leonardo s. Lilly</div>
+          <p>550 ₹</p> 
+      </div>  
+      <div class="books">
+          <img src="books/trend7.jpg"
+               alt="Vachnamrutam"><br>
+          <div class="name">Vachnamrutam</div>
+             <div class="author">Lord Swaminarayan</div>
+          <p>850 ₹</p> 
+      </div>            
+      <div class="books">
+          <img src="books/trend8.jpg"
+               alt="Saurastra ni Rasdhar"><br>
+          <div class="name">Saurastra ni <br>Rasdhar</div>
+             <div class="author">Javerchand Meghani</div>
+          <p>650 ₹</p> 
+      </div> 
+      <div class="books">
+          <img src="books/trend9.jpg"
+               alt="Shrimad Bhagavad Gita"><br>
+          <div class="name">Shrimad Bhagavad <br>Gita</div>
+             <div class="author">Ved Vyasa</div>
+          <p>500 ₹</p> 
+      </div> 
+      <div class="books">
+          <img src="books/trend10.jpg"
+               alt="Programming Python"><br>
+          <div class="name">Programming <br>Python</div>
+             <div class="author">Mark Lutz</div>
+          <p>549 ₹</p> 
+      </div>  
+      <div class="books">
+          <img src="books/trend11.jpg"
+               alt="Data Science from Stratch"><br>
+          <div class="name">Data Science  <br>from Stratch</div>
+             <div class="author">G.S.Collins<br></div>
+          <p>749 ₹</p> 
+      </div>  
+      <div class="books">
+          <img src="books/trend12.jpg"
+               alt="Organic Chemistry"><br>
+          <div class="name">Organic <br>Chemistry</div>
+             <div class="author">M.S.Chauhan<br></div>
+          <p>699 ₹</p> 
+      </div>
+  <!-- </marquee>  -->
+</div><br>
+<div class="Fauthor">
+  <h3><center><b>Feature Authors</b></center></h3>
+  <!-- <marquee  behavior="scroll" direction="left" > -->
+  <div class="fa">
+      <div class="w3-container">
+          <img src="author/author1.jpeg" class="w3-circle" alt="Robart T. kiyosaki"><br>
+          <div class="nm"><center><b>Robart T. kiyosaki</center></b></div>
+      </div>
+  </div>
+  <div class="fa">
+      <div class="w3-container">
+          <img src="author/author2.jpg" class="w3-circle" alt="Zaverchand Meghani"><br>
+          <div class="nm"><center><b>Zaverchand Meghani</center></b></div>
+      </div>
+  </div>
+  <div class="fa">
+      <div class="w3-container">
+          <img src="author/author3.jpg" class="w3-circle" alt="Jay shetty"><br>
+          <div class="nm"><center><b>Jay shetty</center></b></div>
+      </div>
+  </div>
+  <div class="fa">
+      <div class="w3-container">
+          <img src="author/author4.jpg" class="w3-circle" alt="Stephen Covey"><br>
+          <div class="nm"><center><b>Stephen Covey</center></b></div>
+      </div>
+  </div>
+  <div class="fa">
+      <div class="w3-container">
+          <img src="author/author5.jpg" class="w3-circle" alt="Chetan Bhagat"><br>
+          <div class="nm"><center><b>Chetan Bhagat</center></b></div>
+      </div>
+  </div>
+  <div class="fa">
+      <div class="w3-container">
+          <img src="author/author6.jpg" class="w3-circle" alt="Stephen King"><br>
+          <div class="nm"><center><b>Stephen King</center></b></div>
+      </div>
+  </div>
+  <div class="fa">
+      <div class="w3-container">
+          <img src="author/author8.jpg" class="w3-circle" alt="Robin Sharma"><br>
+          <div class="nm"><center><b>Robin Sharma</center></b></div>
+      </div>
+  </div>
+  <div class="fa">
+      <div class="w3-container">
+          <img src="author/author9.jpg" class="w3-circle" alt="Shiv Khera"><br>
+          <div class="nm"><center><b>Shiv Khera</center></b></div>
+      </div>
+    </div>
+  <div class="fa">
+      <div class="w3-container">
+          <img src="author/author11.jpg" class="w3-circle" alt="J.K.Rowling"><br>
+          <div class="nm"><center><b>J.K.Rowling</center></b></div>
+      </div>  
+  </div>
+  <!-- </marquee> -->
+</div><br><hr>
+  <footer>
+      <div class="fter" style="height:143px;">
+          <div class="company">
+              <center><b>Company</center></b>
+              <a href="aboutUs.html">About Us</a><br>
+              Career<br>
+              Blog<br>
+              <a href="contectUs.html">Contact Us</a><br>
+          </div>
+          <div class="company">
+              <center><b>Policies</center></b>
+              Privacy Policies<br>
+              Terms of Use<br>
+              Secure Shopping<br>
+              Copyright Policies<br>
+          </div>
+          <div class="company">
+              <center><b>Help</center></b>
+              Payment<br>
+              Shipping<br>
+              Return<br>
+              FAQ<br>
+          </div>
+      </div><br>
+      <div id="footer-row">
+          <ul class="list-unstyled icons list-inline text-center">
+              <li class="list-inline-item"><a href="https://www.facebook.com/" target="_blank">
+                  <img src="https://d2g9wbak88g7ch.cloudfront.net/staticimages/facebook.png" alt="Facebook" width="32px" height="32px"></a></li>
+              <li class="list-inline-item"><a href="https://twitter.com/" target="_blank">
+                  <img src="https://d2g9wbak88g7ch.cloudfront.net/staticimages/twitter.png" alt="Twitter" width="32px" height="32px"></a></li>
+              <li class="list-inline-item"><a href="https://www.linkedin.com/" target="_blank">
+                  <img src="https://d2g9wbak88g7ch.cloudfront.net/staticimages/linkedin.png" alt="Linkedin" width="32px" height="32px"></a></li>
+              <li class="list-inline-item"><a href="https://www.pinterest.co.uk/" target="_blank">
+                  <img src="https://d2g9wbak88g7ch.cloudfront.net/staticimages/pinterest.png" alt="Pinterest" width="32px" height="32px"></a></li>
+              <li class="list-inline-item"><a target="_blank" href="https://www.youtube.com/">
+                  <img src="https://d2g9wbak88g7ch.cloudfront.net/staticimages/youtube.png" alt="Youtube" width="32px" height="32px"></a></li>
+              <li class="list-inline-item"><a href="https://www.instagram.com/" target="_blank">
+                  <img src="https://d2g9wbak88g7ch.cloudfront.net/staticimages/instagram.png" alt="Instagram" width="32px" height="32px"></a></li>
+          </ul>
+          <div class="col-md-12  text-center text-light copyrighttext mb-3" style="color:white;">
+             Copyright © 2023 . Browserbooks.com.
+             <span class="allrightreserve">All Rights Reserved</span>
+         </div>
+      </div>
+</footer>
+</body>
+</html>
+
+

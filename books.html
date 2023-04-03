@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "icon" href ="logo.jpg" type = "image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index1.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  
+    
+    
+    <style>
+        .spiritual{
+            height:53vh;
+            border: solid 3px white;
+        }
+        .boding
+        {
+            margin: 5px;
+            height: 80vh;
+        }
+        .books {
+            border: 4px ridge #4CAF50;
+            background-color:rgba(5, 5, 5, 0.745);
+            padding: 0px;
+            display: none;
+  	        width: 150px;
+  	        height:260px;
+            flex-direction:none ;
+            display: inline-flex;   
+        }
+        h2{
+            color:white;
+            font-family: 'Times New Roman', Times, serif;
+            margin-left: 2vh;
+        }
+        .bookshelf{
+            margin-left: 2vh;
+        }
+        h3{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    align-content: center;
+    color: rgb(5, 5, 5);
+}   
+.dropbtn-home{
+  background-color:#242121;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #3e8e41;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: black;}
+
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <!-- <a href="index.html"><img id="logo" src="logo.jpg"></a><br> -->
+        <div class="title"><br>
+            <center><h1 style="font-weight: boldx;">Browser Books</h1><br></center>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" >
+        <div class="container-fluid" >
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse-navbar-collapse" id="collapsibleNavbar">
+              <div class="navigate">
+                <li id="header-row-a"><div class="dropdown" style="display: inline-block;background: #211f1c;color: black;">
+                  <a href="Index.html" class="dropbtn-home">Home</a>
+                  <div class="dropdown-content">
+                    <a href="account.html">Account</a>
+                    <a href="register.html">Registration</a>
+                    <a href="Login.html">Login</a>
+                    <a href="uploadBook.html">Your Uploads</a>
+                    <a href="requestBook.html">Requested Book</a>
+                  </div>
+                </div></li>
+                <li id="header-row-a"><div class="dropdown" style="display: inline-block;background: #211f1c;color: black;">
+                    <a href="#" class="dropbtn-home">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="scrol1();">Biography</a>
+                        <a href="#" onclick="scrol2();">Bussiness,Finance & Law</a>
+                        <a href="#" onclick="scrol3();">Computing & Internet</a>
+                        <a href="#">Competitive exam book</a>
+                        <a href="#">Educational & Studies</a>
+                        <a href="#" onclick="scrol4();">Foreign Language & Study</a>
+                        <a href="#">Health & Fitness</a>
+                        <a href="#" onclick="scrol5();">Motivational & Inspiration</a>
+                        <a href="#">Novels</a>
+                        <a href="#" onclick="scrol6();">Spiritual</a>
+                        <a href="#">Reference</a>
+                    </div>
+                </div></li>
+                <li id="header-row-a"><a href="requestBook.html" class="dropbtn">Request a Book</a></li>
+                <li id="header-row-a"><a href="uploadBook.html" class="dropbtn">Upload a Book</a></li>
+                <li id="header-row-a"><a href="contectUs.html" class="dropbtn">Contact Us</a></li>
+                <li id="header-row-a"><a href="aboutUs.html" class="dropbtn">About Us</a></li>
+            </div>
+        </div>
+    </nav>
+<header>
+        
+<main>
+    <div class="bookshelf">   
+        <div class="biography">         <!--Biographics Books-->
+            <h2>Biographics Books...</h2>
+            <span class="boding">
+                <div class="books" onmouseover="zoom();" onmouseleave="zout();">
+                    <img src="books/trend2.jpg"
+                        alt="Fortune"><br>
+                    <div class="name">Fortune</div>
+                    <div class="author">Walter Isaacson</div>
+                    <p>500 ₹</p>
+                </div>        
+            </span>
+            <span class="boding">
+                <div class="books">
+                    <img src="books/book2.jpg"
+                        alt="Wings of Fire"><br>
+                    <div class="name">Wings of Fire</div>
+                    <div class="author">APJ Abdul Kalam</div>
+                    <p>500 ₹</p>
+                </div>        
+            </span>
+            <span class="boding">
+                <div class="books">
+                    <img src="books/best13.jpg"
+                        alt="Unfinished"><br>
+                    <div class="name">Unfinished</div>
+                    <div class="author">Priyanka Chopra Jonas</div>
+                    <p>500 ₹</p>
+                </div>        
+            </span>
+            <span class="boding">
+                <div class="books">
+                    <img src="books/book-6.jpg"
+                        alt="Elon Musk"><br>
+                    <div class="name">Elon Musk</div>
+                    <div class="author">Ashlee Vance</div>
+                    <p>500 ₹</p>
+                </div>        
+            </span>
+            <span class="boding">
+                <div class="books">
+                    <img src="books/book-7.jpg"
+                        alt="Sardar Patel"><br>
+                    <div class="name">Sardar V. Patel</div>
+                    <div class="author">Balraj Krishna</div>
+                    <p>500 ₹</p>
+                </div>        
+            </span>
+            <span class="boding">
+                <div class="books">
+                    <img src="books/book-8.jpg"
+                        alt="My Exper. with Truth"><br>
+                    <div class="name">My Exper. with Truth</div>
+                    <div class="author">M.K.Gandhi</div>
+                    <p>500 ₹</p>
+                </div>        
+            </span>
+            <span class="boding">
+                <div class="books">
+                    <img src="books/book-9.jpg"
+                        alt="A Promised Land"><br>
+                    <div class="name">A Promised Land</div>
+                    <div class="author">Barak Obama</div>
+                    <p>500 ₹</p>
+                </div>        
+            </span>
+            <span class="boding">
+                <div class="books">
+                    <img src="books/book-10.jpg"
+                        alt="Abraham Lincoln"><br>
+                    <div class="name">Lord Charnwood</div>
+                    <div class="author">Abraham Lincoln</div>
+                    <p>500 ₹</p>
+                </div>        
+            </span><hr>   
+            <div class="biography">                         <!--Bussiness, Finance & Law-->
+                <h2>Bussiness, Finance & Law...</h2>
+                <span class="boding">
+                    <div class="books">
+                        <img src="books/b&f/book-1.jpg"
+                            alt="Budgets And Fin. Management"><br>
+                        <div class="name">Budgets And Fin. Management</div>
+                        <div class="author">Margaret Barr</div>
+                        <p>500 ₹</p>
+                    </div>        
+                </span>
+                <span class="boding">
+                    <div class="books">
+                        <img src="books/b&f/book-2.jpg"
+                            alt="Rich Dad, Poor Dad"><br>
+                        <div class="name">Rich Dad, Poor Dad</div>
+                        <div class="author">Robert T.Kiyosaki</div>
+                        <p>500 ₹</p>
+                    </div>        
+                </span>
+                <span class="boding">
+                    <div class="books">
+                        <img src="books/b&f/book-3.jpg"
+                            alt="The psychology of Money"><br>
+                        <div class="name">The psychology of Money</div>
+                        <div class="author">Morgan Housel</div>
+                        <p>500 ₹</p>
+                    </div>        
+                </span>
+                <span class="boding">
+                    <div class="books">
+                        <img src="books/b&f/book-4.jpg"
+                            alt="Zero To One"><br>
+                        <div class="name">Zero To One</div>
+                        <div class="author">Peter Thiel</div>
+                        <p>500 ₹</p>
+                    </div>        
+                </span>
+                <span class="boding">
+                    <div class="books">
+                        <img src="books/b&f/book-5.jpg"
+                            alt="The 100$ Startup"><br>
+                        <div class="name">The 100$ Startup</div>
+                        <div class="author">Chris Guillebea</div>
+                        <p>500 ₹</p>
+                    </div>        
+                </span>
+                <span class="boding">
+                    <div class="books">
+                        <img src="books/b&f/book-6.jpg"
+                            alt="Bussiness Laws"><br>
+                        <div class="name">Bussiness Laws</div>
+                        <div class="author">Tejpal Sheth</div>
+                        <p>500 ₹</p>
+                    </div>        
+                </span>
+                <span class="boding">
+                    <div class="books">
+                        <img src="books/b&f/book-7.jpg"
+                            alt="Elements Of Company Laws"><br>
+                        <div class="name">Elements Of Company Laws</div>
+                        <div class="author">N.D.Kapoors</div>
+                        <p>500 ₹</p>
+                    </div>        
+                </span>
+                <span class="boding">
+                    <div class="books">
+                        <img src="books/b&f/book-8.jpg"
+                            alt="Credit After Bankruptcy"><br>
+                        <div class="name">Credit After Bankruptcy</div>
+                        <div class="author">Stephan Snyder</div>
+                        <p>500 ₹</p>
+                    </div>        
+                </span><hr> 
+                <div class="biography">                         <!--Computer stuffs-->
+                    <h2>Computing & Internet...</h2>
+                    <span class="boding">
+                        <div class="books">
+                            <img src="books/com&Internet/book-1.jpg"
+                                alt="Oracle JAVA Ed-9"><br>
+                            <div class="name">Oracle JAVA Ed-9</div>
+                            <div class="author">Herbert Schildt</div>
+                            <p>500 ₹</p>
+                        </div>        
+                    </span>
+                    <span class="boding">
+                        <div class="books">
+                            <img src="books/com&Internet/book-2.jpg"
+                                alt="OOP With C++"><br>
+                            <div class="name">OOP With C++</div>
+                            <div class="author">E Balagurushamy</div>
+                            <p>500 ₹</p>
+                        </div>        
+                    </span>
+                    <span class="boding">
+                        <div class="books">
+                            <img src="books/com&Internet/book-3.jpg"
+                                alt="DCN Ed-4"><br>
+                            <div class="name">DCN Ed-4</div>
+                            <div class="author">Behruoz Forouzan</div>
+                            <p>500 ₹</p>
+                        </div>        
+                    </span>
+                    <span class="boding">
+                        <div class="books">
+                            <img src="books/com&Internet/book-4.jpg"
+                                alt="Ethical Hacking with Kali"><br>
+                            <div class="name">Ethical Hacking with Kali</div>
+                            <div class="author">Sanjib Sinha</div>
+                            <p>500 ₹</p>
+                        </div>        
+                    </span>
+                    <span class="boding">
+                        <div class="books">
+                            <img src="books/com&Internet/book-5.jpg"
+                                alt="Python crash Course"><br>
+                            <div class="name">Python crash Course Ed-3</div>
+                            <div class="author">Eric Matthes</div>
+                            <p>500 ₹</p>
+                        </div>        
+                    </span>
+                    <span class="boding">
+                        <div class="books">
+                            <img src="books/com&Internet/book-6.jpg"
+                                alt="ML for Oracle DB Professinals"><br>
+                            <div class="name">ML for Oracle DB Professinals</div>
+                            <div class="author">Heli Helskyaho</div>
+                            <p>500 ₹</p>
+                        </div>        
+                    </span>
+                    <span class="boding">
+                        <div class="books">
+                            <img src="books/com&Internet/book-7.jpg"
+                                alt="Google Cloud Foundation"><br>
+                            <div class="name">Google Cloud Foundation</div>
+                            <div class="author">Patrick Haggerty </div>
+                            <p>500 ₹</p>
+                        </div>        
+                    </span>
+                    <span class="boding">
+                        <div class="books">
+                            <img src="books/com&Internet/book-8.jpg"
+                                alt="Oprating System"><br>
+                            <div class="name">Oprating System</div>
+                            <div class="author">William Stallings</div>
+                            <p>500 ₹</p>
+                        </div>        
+                    </span><hr> 
+                    <div class="biography">             <!--Forign Language Books-->
+                        <h2>Foreign Language Books...</h2>
+                        <span class="boding">
+                            <div class="books">
+                                <img src="books/Foreign_Lan/book-1.png"
+                                    alt="IELTS common Mistake"><br>
+                                <div class="name">IELTS common Mistake</div>
+                                <div class="author">Julie Moore</div>
+                                <p>500 ₹</p>
+                            </div>        
+                        </span>
+                        <span class="boding">
+                            <div class="books">
+                                <img src="books/Foreign_Lan/book-2.jpg"
+                                    alt="Vocabulary for IELTS"><br>
+                                <div class="name">Vocabulary for IELTS</div>
+                                <div class="author">Pauline cullen</div>
+                                <p>500 ₹</p>
+                            </div>        
+                        </span>
+                        <span class="boding">
+                            <div class="books">
+                                <img src="books/Foreign_Lan/book-3.jpg"
+                                    alt="German for Beginners"><br>
+                                <div class="name">German for Beginners</div>
+                                <div class="author">----------</div>
+                                <p>500 ₹</p>
+                            </div>        
+                        </span>
+                        <span class="boding">
+                            <div class="books">
+                                <img src="books/Foreign_Lan/book-4.png"
+                                    alt="IELTS 8"><br>
+                                <div class="name">IELTS 8</div>
+                                <div class="author">Cambridge  Uni. Press</div>
+                                <p>500 ₹</p>
+                            </div>        
+                        </span>
+                        <span class="boding">
+                            <div class="books">
+                                <img src="books/Foreign_Lan/book-5.jpg"
+                                    alt="GRE Prep. 2022"><br>
+                                <div class="name">GRE Prep. 2022</div>
+                                <div class="author">Kaplan </div>
+                                <p>500 ₹</p>
+                            </div>        
+                        </span>
+                        <span class="boding">
+                            <div class="books">
+                                <img src="books/Foreign_Lan/book-6.jpeg"
+                                    alt="TOEFL Prep."><br>
+                                <div class="name">TOEFL Prep.</div>
+                                <div class="author">Trivium</div>
+                                <p>500 ₹</p>
+                            </div>        
+                        </span>
+                        <span class="boding">
+                            <div class="books">
+                                <img src="books/Foreign_Lan/book-7.jpeg"
+                                    alt="How to a learn Foreign Lan."><br>
+                                <div class="name">How to a learn Foreign Lan.</div>
+                                <div class="author">----------</div>
+                                <p>500 ₹</p>
+                            </div>        
+                        </span>
+                        <span class="boding">
+                            <div class="books">
+                                <img src="books/Foreign_Lan/book8.jpeg"
+                                    alt="The Vocabulary Buider"><br>
+                                <div class="name">The Vocabulary Buider</div>
+                                <div class="author">Chris Lele</div>
+                                <p>500 ₹</p>
+                            </div>        
+                        </span><hr>
+                        <div class="biography">                         <!--Motivational & Inspirational Books-->
+                            <h2>Motivational & Inspirational Books...</h2>
+                            <span class="boding">
+                                <div class="books">
+                                    <img src="books/M&I/book-1.jpg"
+                                        alt="IKIGAI"><br>
+                                    <div class="name">IKIGAI</div>
+                                    <div class="author">Héctor García</div>
+                                    <p>500 ₹</p>
+                                </div>        
+                            </span>
+                            <span class="boding">
+                                <div class="books">
+                                    <img src="books/M&I/book-2.jpg"
+                                        alt="Own Your Future"><br>
+                                    <div class="name">Own Your Future</div>
+                                    <div class="author">Paul B. Brown</div>
+                                    <p>500 ₹</p>
+                                </div>        
+                            </span>
+                            <span class="boding">
+                                <div class="books">
+                                    <img src="books/M&I/book-3.jpg"
+                                        alt="Atomic Habits"><br>
+                                    <div class="name">Atomic Habits</div>
+                                    <div class="author">James Clear</div>
+                                    <p>500 ₹</p>
+                                </div>        
+                            </span>
+                            <span class="boding">
+                                <div class="books">
+                                    <img src="books/M&I/book-4.jpg"
+                                        alt="Do Epic Shit"><br>
+                                    <div class="name">Do Epic Shit</div>
+                                    <div class="author">Ankur Warikoo</div>
+                                    <p>500 ₹</p>
+                                </div>        
+                            </span>
+                            <span class="boding">
+                                <div class="books">
+                                    <img src="books/M&I/book-5.jpg"
+                                        alt="Think Like a Monk"><br>
+                                    <div class="name">Think Like a Monk</div>
+                                    <div class="author">Jay Shetty </div>
+                                    <p>500 ₹</p>
+                                </div>        
+                            </span>
+                            <span class="boding">
+                                <div class="books">
+                                    <img src="books/M&I/book-6.jpg"
+                                        alt="Straight Talk, No Chaser"><br>
+                                    <div class="name">Straight Talk, No Chaser</div>
+                                    <div class="author">Steve Harvey</div>
+                                    <p>500 ₹</p>
+                                </div>        
+                            </span>
+                            <span class="boding">
+                                <div class="books">
+                                    <img src="books/M&I/book-7.jpg"
+                                        alt="Can't Hurt Me"><br>
+                                    <div class="name">Can't Hurt Me</div>
+                                    <div class="author">David Goggins</div>
+                                    <p>500 ₹</p>
+                                </div>        
+                            </span>
+                            <span class="boding">
+                                <div class="books">
+                                    <img src="books/M&I/book-8.jpg"
+                                        alt="Everyday Hero"><br>
+                                    <div class="name">Everyday Hero</div>
+                                    <div class="author">Robin Sharma</div>
+                                    <p>500 ₹</p>
+                                </div>        
+                            </span><hr>     
+                        <h2>Spiritual Books...</h2>                 <!--Spiritual Books-->
+                        <span class="boding">
+                            <div class="books">
+                                <img src="books/best0.jpg"
+                                    alt="Shrimad Bhagavad Gita"><br>
+                                <div class="name">Shrimad Bhagvad <br>Gita </div>
+                                <div class="author">Ved Vyasa</div>
+                                <p>500 ₹</p>
+                            </div>        
+                        </span>
+                        <span class="boding">
+                            <div class="books">
+                                <img src="books/trend7.jpg"
+                                    alt="Vachnamrutam"><br>
+                                <div class="name">Vachnamrutam</div>
+                                <div class="author">Lord Swaminarayan</div>
+                                <p>500 ₹</p>
+                            </div>        
+                        </span>
+                        <span class="boding">
+                            <div class="books">
+                                <img src="books/best10.jpg"
+                                    alt="Ramayan"><br>
+                                <div class="name">Ramayan</div>
+                                <div class="author">Shri Valmiki</div>
+                                <p>500 ₹</p>
+                            </div>        
+                        </span>
+                        <span class="boding">
+                            <div class="books">
+                                <img src="books/book-1.jpg"
+                                    alt="Shri Ramcharitmans"><br>
+                                <div class="name">Shri Ramcharitmans</div>
+                                <div class="author">Goswami Tulsidasji</div>
+                                <p>500 ₹</p>
+                            </div>        
+                        </span>
+                        <span class="boding">
+                            <div class="books">
+                                <img src="books/book-2.jpg"
+                                    alt="Shikshapatri"><br>
+                                <div class="name">Shikshapatri</div>
+                                <div class="author">Lord Swaminarayan</div>
+                                <p>500 ₹</p>
+                            </div>        
+                        </span>
+                        <span class="boding">
+                            <div class="books">
+                                <img src="books/book-3.jpg"
+                                    alt="Shiv Sanhita"><br>
+                                <div class="name">Shiv Sanhita</div>
+                                <div class="author">Raghavendrasharma <br>Raghav</div>
+                                <p>500 ₹</p>
+                            </div>        
+                        </span>
+                        <span class="boding">
+                            <div class="books">
+                                <img src="books/book-4.jpg"
+                                    alt="Knowing God"><br>
+                                <div class="name">Knowing God</div>
+                                <div class="author">J.I.Packer</div>
+                                <p>500 ₹</p>
+                            </div>        
+                        </span>
+                        <span class="boding">
+                            <div class="books">
+                                <img src="books/book-5.jpg"
+                                    alt="Upnishadas"><br>
+                                <div class="name">Upnishadas</div>
+                                <div class="author">Shri Adi <br>Shankaracharya</div>
+                                <p>500 ₹</p>
+                            </div>        
+                        </span><hr>           
+    </div>
+</main>
+<script>
+function scrol1(){
+    window.scrollTo(0,30);
+
+}
+
+function scrol2(){
+    window.scrollTo(50,200);
+}
+
+function scrol3(){
+    window.scrollTo(500,600);
+}
+
+function scrol4(){
+    window.scrollTo(600,900);
+}
+
+function scrol5(){
+    window.scrollTo(900,1200);
+}
+
+function scrol6(){
+    window.scrollTo(1200,1500);
+}
+
+
+function zoom() {
+    document.getElementsByClassName("books");
+}
+</script>
+<footer>
+    <div class="fter" style="height:143px;">
+        <div class="company">
+            <center><b>Company</center></b>
+            <a href="aboutUs.html">About Us</a><br>
+            Career<br>
+            Blog<br>
+            <a href="contectUs.html">Contact Us</a><br>
+        </div>
+        <div class="company">
+            <center><b>Policies</center></b>
+            Privacy Policies<br>
+            Terms of Use<br>
+            Secure Shopping<br>
+            Copyright Policies<br>
+        </div>
+        <div class="company">
+            <center><b>Help</center></b>
+            Payment<br>
+            Shipping<br>
+            Return<br>
+            FAQ<br>
+        </div>
+    </div><br>
+    <div class="row">
+        <ul class="list-unstyled icons list-inline text-center">
+            <li class="list-inline-item"><a href="https://www.facebook.com/" target="_blank">
+                <img src="https://d2g9wbak88g7ch.cloudfront.net/staticimages/facebook.png" alt="Facebook" width="32px" height="32px"></a></li>
+            <li class="list-inline-item"><a href="https://twitter.com/" target="_blank">
+                <img src="https://d2g9wbak88g7ch.cloudfront.net/staticimages/twitter.png" alt="Twitter" width="32px" height="32px"></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/" target="_blank">
+                <img src="https://d2g9wbak88g7ch.cloudfront.net/staticimages/linkedin.png" alt="Linkedin" width="32px" height="32px"></a></li>
+            <li class="list-inline-item"><a href="https://www.pinterest.co.uk/" target="_blank">
+                <img src="https://d2g9wbak88g7ch.cloudfront.net/staticimages/pinterest.png" alt="Pinterest" width="32px" height="32px"></a></li>
+            <li class="list-inline-item"><a target="_blank" href="https://www.youtube.com/">
+                <img src="https://d2g9wbak88g7ch.cloudfront.net/staticimages/youtube.png" alt="Youtube" width="32px" height="32px"></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/" target="_blank">
+                <img src="https://d2g9wbak88g7ch.cloudfront.net/staticimages/instagram.png" alt="Instagram" width="32px" height="32px"></a></li>
+        </ul>
+
+        <div class="col-md-12  text-center text-light copyrighttext mb-3" style="color:white">
+           Copyright © 2023 . Browserbooks.com.
+           <span class="allrightreserve">All Rights Reserved</span>
+       </div>
+    </div>
+</footer>
+</body>
+</html>
